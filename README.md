@@ -87,3 +87,11 @@ Supaya kalian tidak mulai dari nol. Kalian bisa langsung fokus ke:
 - logika fitur,
 - integrasi API,
 - dan praktik pemrograman web yang rapi.
+
+## Support
+
+Berikan template ini sebuah bintang ⭐ jika kalian merasa terbantu!
+
+---
+
+Created by [@andreedyson](https://www.github.com/andreedyson)
