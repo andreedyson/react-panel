@@ -1,16 +1,89 @@
-# React + Vite
+# React Panel Starter Kit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Template ini disiapkan sebagai titik awal membuat frontend admin panel dengan React.
 
-Currently, two official plugins are available:
+Fokus template:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Struktur proyek (layout, halaman, komponen)
+- Routing dasar sudah siap pakai
+- UI dasar menggunakan Bootstrap
+- Mudah dikembangkan untuk tugas atau mini project
 
-## React Compiler
+## Teknologi yang Dipakai
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React + Vite
+- React Router DOM
+- Bootstrap 5
+- ESLint
 
-## Expanding the ESLint configuration
+## Cara Menjalankan Proyek
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Pastikan Node.js sudah terpasang, lalu jalankan:
+
+```bash
+npm install
+npm run dev
+```
+
+Buka di browser: `http://localhost:5173`
+
+Perintah penting lainnya:
+
+```bash
+npm run build
+npm run preview
+npm run lint
+```
+
+## Gambaran Fitur Bawaan
+
+- Halaman autentikasi: Login dan Register
+- Dashboard layout: Sidebar + Navbar + konten utama
+- Halaman dashboard dengan contoh kartu statistik dan tabel data
+- Halaman tabel data terpisah
+- Halaman form sederhana untuk latihan input data
+
+Catatan:
+
+- Ini masih template frontend, belum terhubung backend asli.
+- Status login sementara disimpan di `localStorage` (key: `isLoggedIn`).
+
+## Alur Halaman
+
+- `/login` -> halaman masuk
+- `/register` -> halaman daftar
+- `/dashboard` -> halaman utama dashboard
+- `/table` -> halaman tabel data
+- `/form` -> halaman form
+
+Jika belum login, user akan diarahkan ke `/login`.
+
+## Struktur Folder Utama
+
+```text
+src/
+	components/      # Komponen reusable (Navbar, Sidebar)
+	layouts/         # Kerangka halaman (AuthLayout, DashboardLayout)
+	pages/           # Halaman utama aplikasi
+	styles/          # CSS khusus (misal sidebar)
+	App.jsx          # Konfigurasi routing aplikasi
+	main.jsx         # Entry point React
+```
+
+## Saran Pengembangan untuk Mahasiswa
+
+Kalian bisa lanjutkan template ini dengan:
+
+1. Menghubungkan login/register ke API backend.
+2. Mengganti data dummy dashboard dengan data asli dari server.
+3. Menambahkan fitur CRUD pada halaman tabel/form.
+4. Menambah proteksi route berbasis token/JWT.
+5. Menata ulang tampilan agar sesuai branding proyek kalian.
+
+## Tujuan Template Ini
+
+Supaya kalian tidak mulai dari nol. Kalian bisa langsung fokus ke:
+
+- logika fitur,
+- integrasi API,
+- dan praktik pemrograman web yang rapi.
