@@ -1,9 +1,9 @@
 # React Admin Panel Starter Kit
 
-Template ini disiapkan sebagai titik awal untuk membangun **frontend admin panel** menggunakan React. Struktur sudah dirancang agar langsung bisa digunakan untuk pengembangan fitur tanpa harus setup dari nol.
+
 
 <img width="1920" height="868" alt="image" src="https://github.com/user-attachments/assets/e7012b50-f225-4477-b77c-bdbccd84bbe1" />
-
+Template ini disiapkan sebagai titik awal untuk membangun **frontend admin panel** menggunakan React. Struktur sudah dirancang agar langsung bisa digunakan untuk pengembangan fitur tanpa harus setup dari nol.
 ---
 
 ## 🎯 Fokus Template
