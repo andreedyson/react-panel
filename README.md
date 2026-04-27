@@ -1,97 +1,148 @@
-# React Panel Starter Kit
+# React Admin Panel Starter Kit
 
-Template ini disiapkan sebagai titik awal membuat frontend admin panel dengan React.
+Template ini disiapkan sebagai titik awal untuk membangun **frontend admin panel** menggunakan React. Struktur sudah dirancang agar langsung bisa digunakan untuk pengembangan fitur tanpa harus setup dari nol.
 
-Fokus template:
-
-- Struktur proyek (layout, halaman, komponen)
-- Routing dasar sudah siap pakai
-- UI dasar menggunakan Bootstrap
-- Mudah dikembangkan untuk tugas atau mini project
-
-## Teknologi yang Dipakai
-
-- React + Vite
-- React Router DOM
-- Bootstrap 5
-- ESLint
-
-## Cara Menjalankan Proyek
-
-Pastikan Node.js sudah terpasang, lalu jalankan:
-
-```bash
-npm install
-npm run dev
-```
-
-Buka di browser: `http://localhost:5173`
-
-Perintah penting lainnya:
-
-```bash
-npm run build
-npm run preview
-npm run lint
-```
-
-## Gambaran Fitur Bawaan
-
-- Halaman autentikasi: Login dan Register
-- Dashboard layout: Sidebar + Navbar + konten utama
-- Halaman dashboard dengan contoh kartu statistik dan tabel data
-- Halaman tabel data terpisah
-- Halaman form sederhana untuk latihan input data
-
-Catatan:
-
-- Ini masih template frontend, belum terhubung backend asli.
-- Status login sementara disimpan di `localStorage` (key: `isLoggedIn`).
-
-## Alur Halaman
-
-- `/login` -> halaman masuk
-- `/register` -> halaman daftar
-- `/dashboard` -> halaman utama dashboard
-- `/table` -> halaman tabel data
-- `/form` -> halaman form
-
-Jika belum login, user akan diarahkan ke `/login`.
-
-## Struktur Folder Utama
-
-```text
-src/
-	components/      # Komponen reusable (Navbar, Sidebar)
-	layouts/         # Kerangka halaman (AuthLayout, DashboardLayout)
-	pages/           # Halaman utama aplikasi
-	styles/          # CSS khusus (misal sidebar)
-	App.jsx          # Konfigurasi routing aplikasi
-	main.jsx         # Entry point React
-```
-
-## Saran Pengembangan untuk Mahasiswa
-
-Kalian bisa lanjutkan template ini dengan:
-
-1. Menghubungkan login/register ke API backend.
-2. Mengganti data dummy dashboard dengan data asli dari server.
-3. Menambahkan fitur CRUD pada halaman tabel/form.
-4. Menambah proteksi route berbasis token/JWT.
-5. Menata ulang tampilan agar sesuai branding proyek kalian.
-
-## Tujuan Template Ini
-
-Supaya kalian tidak mulai dari nol. Kalian bisa langsung fokus ke:
-
-- logika fitur,
-- integrasi API,
-- dan praktik pemrograman web yang rapi.
-
-## Support
-
-Berikan template ini sebuah bintang ⭐ jika kalian merasa terbantu!
+<img width="1920" height="868" alt="image" src="https://github.com/user-attachments/assets/e7012b50-f225-4477-b77c-bdbccd84bbe1" />
 
 ---
 
-Created by [@andreedyson](https://www.github.com/andreedyson)
+## 🎯 Fokus Template
+
+* Struktur proyek yang terorganisir (layout, pages, components)
+* Routing dasar siap pakai
+* UI dasar menggunakan Bootstrap 5
+* Mudah dikembangkan untuk tugas, proyek kampus, atau mini project
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+* React + Vite
+* React Router DOM
+* Bootstrap 5
+* ESLint
+
+---
+
+## 🚀 Cara Menggunakan
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/andreedyson/react-panel.git
+cd react-panel-starter-kit
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Jalankan Project
+
+```bash
+npm run dev
+```
+
+Buka di browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📦 Perintah Penting
+
+```bash
+npm run build     # Build untuk production
+npm run preview   # Preview hasil build
+npm run lint      # Menjalankan ESLint
+```
+
+---
+
+## 📊 Fitur Bawaan
+
+* 🔐 Halaman autentikasi (Login & Register)
+* 📌 Dashboard layout (Sidebar + Navbar + Content)
+* 📈 Dashboard dengan contoh:
+
+  * Statistik cards
+  * Tabel data
+* 📋 Halaman tabel terpisah
+* 📝 Halaman form sederhana untuk latihan input
+
+---
+
+## ⚠️ Catatan
+
+* Template ini masih **frontend only** (belum terhubung ke backend)
+* Status login disimpan sementara di `localStorage`
+
+```
+key: isLoggedIn
+```
+
+---
+
+## 🔄 Alur Routing
+
+| Path         | Deskripsi          |
+| ------------ | ------------------ |
+| `/login`     | Halaman login      |
+| `/register`  | Halaman register   |
+| `/dashboard` | Dashboard utama    |
+| `/table`     | Halaman tabel data |
+| `/form`      | Halaman form input |
+
+Jika user belum login, akan otomatis diarahkan ke `/login`.
+
+---
+
+## 📁 Struktur Folder
+
+```text
+src/
+  components/   # Komponen reusable (Navbar, Sidebar)
+  layouts/      # Layout halaman (AuthLayout, DashboardLayout)
+  pages/        # Halaman utama aplikasi
+  styles/       # Styling tambahan (misal sidebar)
+  App.jsx       # Konfigurasi routing
+  main.jsx      # Entry point React
+```
+
+---
+
+## 💡 Saran Pengembangan
+
+Untuk pengembangan lebih lanjut, kamu bisa:
+
+1. Menghubungkan autentikasi ke backend API
+2. Mengganti data dummy dengan data dari server
+3. Menambahkan fitur CRUD pada tabel & form
+4. Implementasi proteksi route dengan JWT/token
+5. Menyesuaikan UI dengan branding proyek
+
+---
+
+## 🎯 Tujuan Template
+
+Template ini dibuat agar kamu tidak mulai dari nol dan bisa langsung fokus ke:
+
+* Implementasi fitur
+* Integrasi API
+* Penulisan kode yang terstruktur dan scalable
+
+---
+
+## ⭐ Support
+
+Jika template ini membantu, berikan ⭐ di repository agar bisa berkembang lebih baik.
+
+---
+
+## 👨‍💻 Author
+
+Created by [@andreedyson](https://github.com/andreedyson)
